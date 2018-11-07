@@ -21,10 +21,8 @@ Append the corresponding REST API endpoint with this base url to make a call to 
 #### REST API for user CRUD operation:
 
 - create user 
-  - Postman Example URI: http://localhost:8080/< yourAppName >/store/customers?fname=Jane&lname=Doe&username=jdoe&email=jdoe@gmail.com
 ```
 Request: POST /customers?fname=Jane&lname=Doe&username=jdoe&email=jdoe@gmail.com
-
 Response body: A string containing confirmation of user creation with Http Status code 200.
 ```
 
@@ -40,7 +38,6 @@ Request: DELETE /customers/{username}
 Response body: (empty), Http Status code 200 for successful deletion
 ```
 - lookup user
-  - Postman Example URI: http://localhost:8080/< yourAppName >/store/customers/jdoe
 ```
 Request: GET /customers/{username}
 Response body:
