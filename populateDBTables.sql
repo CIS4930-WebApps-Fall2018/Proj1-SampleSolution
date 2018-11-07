@@ -1,7 +1,3 @@
-/*
-The following is an example of a "Stored Procedure"
-*/
-
 INSERT INTO customers (fname, lname, username,email) VALUES ("Dr. P", "Brown", "prbrown", "philippa.brown");
 INSERT INTO carts (username) VALUES ("prbrown");
 
