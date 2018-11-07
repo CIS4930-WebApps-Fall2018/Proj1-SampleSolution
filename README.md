@@ -1,4 +1,4 @@
-# Proj1-SampleSolution
+# Project1 - Sample Solution
 RESTful API implementation of online store app.
 
 ## Project Description
@@ -12,8 +12,10 @@ Implement a RESTful Web Service for your online store.  The product and user dat
 
 2. Once your database is ready, deploy the war file in you local Apache Tomcat server. If your deployment is successful and your database is configured and populated as described above, you are now ready to test the following REST APIs.
 
-Base URL: http://localhost:8080/< yourAppName >/store/
-Append the corresponding REST API endpoint with this base url to make a call to that particular API. 
+Base URL: ```http://localhost:8080/online-store-app/store/```
+
+Append the corresponding REST API endpoint with this base url to make a call to that particular API.
+
 **FYI, the following REST APIs use either query parameters or path parameter to send requests, irrespective of the nature of HTTP methods (e.g. GET, POST).**
 
 #### REST API for user CRUD operation:
