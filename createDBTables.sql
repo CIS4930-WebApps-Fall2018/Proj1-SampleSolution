@@ -1,4 +1,4 @@
-SHOW TABLES;
+--run this following commands in db_store_solution database.
 DROP TABLE IF EXISTS products, customers, orders, carts, cartproducts;
 SHOW TABLES;
 CREATE TABLE customers(id SERIAL, fname VARCHAR(255), lname VARCHAR(255), 
@@ -14,5 +14,4 @@ CREATE TABLE cartproducts(productId INT, productName VARCHAR(255), msrp DECIMAL(
 
 CREATE TABLE orders(productId INT, username VARCHAR(255));
 
-SELECT "You will need to decide how to persist cart and order information. Will you amend an existing table or create new one(s)?" AS "";
 SHOW TABLES;
