@@ -5,10 +5,10 @@ RESTful API implementation of online store app.
 Implement a RESTful Web Service for your online store.  The product and user data is stored on your company's local servers, and you will provide customers the ability to sign up for accounts, search products and place orders.
 
 ### Setting up the solution
-1. MySQL set up: Create a MySQL database named **db_store**. Create a db user with the following name and password: **springuser** and **ThePassword**. Assign this user to **db_store** database. 
+1. MySQL set up: Create a MySQL database named **db_store_solution**. Create a db user with the following name and password: **springuser** and **ThePassword**. Assign this user to **db_store_solution** database. 
 - See { spring tutorial } for database and user set up instructions
 
-2. Populate database: Run the sql scripts from the repository into **db_store** database to create and populate tables.
+2. Populate database: Run the sql scripts from the repository into **db_store_solution** database to create and populate tables.
 
 2. Once your database is ready, deploy the war file in you local Apache Tomcat server. If your deployment is successful and your database is configured and populated as described above, you are now ready to test the following REST APIs.
 
