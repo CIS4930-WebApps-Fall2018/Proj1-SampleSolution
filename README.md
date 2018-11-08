@@ -40,7 +40,7 @@ Response body: (empty), Http Status code 200 for successful deletion
 - lookup user
 ```
 Request: GET /customers/{username}
-Response body:
+JSON Response body:
 {
     "fname": "Jane",
     "lname": "Doe",
@@ -52,7 +52,7 @@ Response body:
 - list all items
 ```
 Request: GET /items
-Response body (application/json) :
+JSON Response body :
 [
 {
        "itemId": 107,
@@ -84,7 +84,7 @@ Response body (application/json) :
 - list items by keyword
 ```
 Request: GET /items/search/{keyword}
-Response body:
+JSON Response body:
 [
 {
        "itemId": 107,
@@ -116,7 +116,7 @@ Response body:
 - list item by id
 ```
 Request: GET /items/{id}
-Response body:
+JSON Response body:
 {
        "itemId": 107,
         "name": "Rose Cottage Girls' Hunter Green  Jacket Dress",
@@ -140,7 +140,7 @@ Response body: HTTP 200 with a confirmation message in string
 - show user's shopping cart
 ```
 Request: GET /carts?username=jdoe
-Response body:
+JSON Response body:
 {
    "cartId": 2,
    "items":[
@@ -164,7 +164,7 @@ Response body:
 - remove item from shopping cart
 ```
 Request: DELETE /carts?cartId=2&productId=25
-Response body: (empty)
+Response body: HTTP 200 with a confirmation message in string
 ```
 
 - buy item (adjust shopping cart status and product list/count)
@@ -177,7 +177,17 @@ Response body: HTTP 200 with a confirmation message in string
 - list users who bought a specific product
 ```
 Request: GET /carts?productID=123
-Response body: HTTP 200 with a confirmation message in string
+JSON Response body: 
+[
+{
+"productId": 25,
+"username": "jovi"
+},
+{
+"productId": 25,
+"username": "jdoe"
+}
+]
 ```
 
 
